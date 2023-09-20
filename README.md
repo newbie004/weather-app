@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* ruby version: 3.2.2
+* rails version: 7.0.8
+* external API: "http://api.openweathermap.org/data/2.5/
 
-Things you may want to cover:
+* support for user login, logout.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run this Application
+* After cloning, insert open weather map API Key in application.yml file.
+* create user
+* login
+* Fetch weather result for any city.
