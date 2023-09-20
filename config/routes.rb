@@ -5,11 +5,11 @@ Rails.application.routes.draw do
   post '/signup', to: 'users#create'
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
-  delete '/logout', to: 'sessions#destroy'
+  get '/logout', to: 'sessions#destroy'
   get '/home', to: 'home#index'
-
+  post '/process_location', to: 'weather#process_location'
+  get '/show_weather', to: 'weather#show_weather'
 
   resources :users # in order to use user_path in views file
   # defining users as resource will provide CRUD operations for users object.
-
 end

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Response</title>
+</head>
+<body>
+  <h1>Weather Response</h1>
+  <% parsed_weather_info = JSON.parse(session[:weather_info]) %>
+  <pre><%= JSON.pretty_generate(parsed_weather_info) %></pre>
+
+  <!-- Back to Home button -->
+  <%= link_to 'Back to Home', home_path, class: 'btn btn-primary' %>
+</body>
+</html>
